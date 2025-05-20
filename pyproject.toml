@@ -1,0 +1,93 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "erl"
+version = "0.0.1"
+description = "Experience-based Reinforcement Learning Framework"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+keywords = ["reinforcement-learning", "experience", "planning", "world-models", "verified-rewards]
+authors = [
+    { name = "Ioannis Pastellas", email = "giannipast09@example.com" }
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "torch==2.6.0",
+    "numpy>=1.24.0",
+    "gymnasium>=0.28.1",
+    "transformers>=4.30.0",
+    "datasets>=2.12.0",
+    "tqdm>=4.65.0",
+    "wandb>=0.15.0",
+    "pytest>=7.3.1",
+    "black>=23.3.0",
+    "isort>=5.12.0",
+    "mypy>=1.3.0",
+    "setuptools",
+    "deepspeed",
+    "accelerate",
+    "peft",
+    "rich",
+    "duckduckgo-search",
+    "trl==0.17",
+    "liger-kernel",
+    "brave-search",
+    "latex2sympy>=1.0.3",
+    "math-verify[antlr4-13-2]>=0.1.0",
+    "pylatexenc>=2.10",
+    "requests>=2.32.3",
+    "smolagents>=1.15.0",
+    "vllm>=0.8.5.post1",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/erl"
+Documentation = "https://github.com/yourusername/erl#readme"
+Repository = "https://github.com/yourusername/erl.git"
+Issues = "https://github.com/yourusername/erl/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/erl"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 100
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true
+
+[[tool.mypy.overrides]]
+module = [
+    "torch.*",
+    "numpy.*",
+    "gymnasium.*",
+    "transformers.*",
+    "datasets.*",
+]
+ignore_missing_imports = true 

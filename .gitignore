@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.env
+.venv
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+coverage.xml
+*.cover
+
+# Project specific
+outputs/
+logs/
+wandb/
+runs/
+
+# Model files
+*.pt
+*.pth
+*.ckpt
+*.bin
+
+# Environment variables
+.env
+.env.local
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# Misc
+.DS_Store
+Thumbs.db 

@@ -1,0 +1,57 @@
+# Experience-specific configuration
+
+# Sensor settings
+sensors:
+  text:
+    max_length: 512
+    tokenizer: "gpt2"
+  image:
+    height: 224
+    width: 224
+    channels: 3
+    normalize: true
+  api:
+    timeout: 5.0
+    retries: 3
+
+# Actuator settings
+actuators:
+  text:
+    max_length: 512
+    tokenizer: "gpt2"
+  image:
+    height: 224
+    width: 224
+    channels: 3
+  api:
+    timeout: 5.0
+    retries: 3
+
+# Experience stream settings
+stream:
+  buffer_size: 1000000
+  batch_size: 256
+  n_step: 3
+  gamma: 0.99
+  prioritized_replay: true
+  alpha: 0.6
+  beta: 0.4
+  beta_anneal: 0.001
+  min_experience: 1000
+
+# Reward settings
+rewards:
+  distance:
+    weight: 1.0
+    scale: 1.0
+    clip_range: [-1.0, 1.0]
+  task_completion:
+    weight: 1.0
+    success_threshold: 0.9
+  user_feedback:
+    weight: 1.0
+    feedback_key: "user_feedback"
+  safety:
+    weight: 1.0
+    safety_threshold: 0.5
+    penalty: -1.0 
