@@ -56,8 +56,11 @@ Documentation = "https://github.com/yourusername/erl#readme"
 Repository = "https://github.com/yourusername/erl.git"
 Issues = "https://github.com/yourusername/erl/issues"
 
+[tool.hatch.build]
+source-directories = ["src"]
+
 [tool.hatch.build.targets.wheel]
-packages = ["src/erl"]
+packages = ["erl"]
 
 [tool.black]
 line-length = 100
