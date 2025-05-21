@@ -1,0 +1,23 @@
+# Deep Learning Framework
+torch>=1.9.0  # PyTorch for deep learning operations
+
+# Scientific Computing
+numpy>=1.19.2  # Numerical computing
+scipy>=1.7.0   # Scientific computing
+
+# Visualization
+matplotlib>=3.3.2  # Plotting library
+seaborn>=0.11.0   # Statistical data visualization
+
+# Testing
+pytest>=6.2.5     # Testing framework
+pytest-cov>=2.12.0  # Coverage reporting
+
+# Development Tools
+black>=21.5b2     # Code formatting
+flake8>=3.9.2     # Code linting
+isort>=5.9.1      # Import sorting
+
+# Type Checking
+mypy>=0.910       # Static type checking
+types-numpy>=1.20.0  # Type stubs for numpy 
