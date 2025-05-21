@@ -26,8 +26,8 @@ An implementation of the "Era of Experience" paradigm as described in "The Era o
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/era-of-experience.git
-cd era-of-experience
+git clone [https://github.com/giannisp09/erl.git]
+cd erl
 
 # Create and activate a virtual environment
 python -m venv venv
@@ -60,6 +60,7 @@ python -m src --config-name=experience \
 - World model and policy networks
 - Model-based planning
 - PPO with intrinsic curiosity
+- LLM with Verifable Rewards
 - TensorBoard and W&B integration
 
 ## Development
