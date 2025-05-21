@@ -2,7 +2,7 @@ import torch
 import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
-from src.experience.stream import Experience, ExperienceReplay, ContinuousStream
+from erl.experience.stream import Experience, ExperienceReplay, ContinuousStream
 
 def create_simple_environment():
     """Create a simple environment for demonstration."""
