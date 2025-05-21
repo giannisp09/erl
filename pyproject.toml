@@ -9,7 +9,7 @@ description = "Experience-based Reinforcement Learning Framework"
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
-keywords = ["reinforcement-learning", "experience", "planning", "world-models", "verified-rewards]
+keywords = ["reinforcement-learning", "experience", "planning", "world-models", "verified-rewards"]
 authors = [
     { name = "Ioannis Pastellas", email = "giannipast09@example.com" }
 ]
@@ -42,7 +42,7 @@ dependencies = [
     "liger-kernel",
     "brave-search",
     "latex2sympy>=1.0.3",
-    "math-verify[antlr4-13-2]>=0.1.0",
+    "math-verify[antlr4_13_2]>=0.1.0",
     "pylatexenc>=2.10",
     "requests>=2.32.3",
     "smolagents>=1.15.0",
