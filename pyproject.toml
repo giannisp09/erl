@@ -39,7 +39,6 @@ dependencies = [
     "rich",
     "duckduckgo-search",
     "trl==0.17",
-    "triton==2.3.1",
     "liger-kernel",
     "brave-search",
     "latex2sympy>=1.0.3",
